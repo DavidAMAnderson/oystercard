@@ -1,6 +1,7 @@
 
 require_relative 'journey'
 require_relative 'journey_log'
+require_relative 'station'
 
 class Oystercard
 
