@@ -24,7 +24,7 @@ class Journey
     if @entry_station == nil || @exit_station == nil
       PENALTY_FARE
     else
-      MINIMUM_FARE
+      (@entry_station.zone - @exit_station.zone).abs + MINIMUM_FARE
     end
   end
 end
